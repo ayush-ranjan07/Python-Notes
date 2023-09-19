@@ -6,8 +6,6 @@
 
 
 import random
-
-
 suits = ['Hearts', 'Diamonds', 'Clubs', 'Spades']
 ranks = ['Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Jack', 'Queen', 'King', 'Ace']
 values = {'Two': 2, 'Three': 3, 'Four': 4, 'Five': 5, 'Six': 6, 'Seven': 7, 'Eight': 8, 'Nine': 9, 'Ten': 10, 'Jack': 10, 'Queen': 10, 'King': 10, 'Ace': 11}
@@ -19,7 +17,6 @@ def create_deck():
         for rank in ranks:
             deck.append(f'{rank} of {suit}')
     return deck
-
 
 def calculate_hand_value(hand):
     value = 0
@@ -34,13 +31,11 @@ def calculate_hand_value(hand):
         aces -= 1
     return value
 
-
 def display_hand(player, hand):
     print(f"{player}'s Hand:")
     for card in hand:
         print(card)
     print(f'Total Value: {calculate_hand_value(hand)}\n')
-
 
 deck = create_deck()
 random.shuffle(deck)
@@ -84,6 +79,8 @@ else:
     print("It's a tie!")
 
 print("Thanks for playing!")
+
+
 
 
 #######################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################

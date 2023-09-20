@@ -149,7 +149,36 @@ print(f"Free fall distance after {time} seconds: {free_fall_distance}")
 
 
 # In this example, `PI` and `GRAVITY` are defined as global constants, indicated by their uppercase names. These constants can be used throughout the program without modification, and their values are accessible in functions as well.
+In Python, constants are typically defined as global variables with uppercase names to indicate that their values should not be changed. Python doesn't have built-in constants like some other languages, so you rely on conventions to indicate that a variable is intended to be treated as a constant.
+
+# Here's an example of defining a constant in Python's global scope:
+
+```python
+# Defobal constant
+PI = 3.14159265359
+GRAVITY = 9.81
+
+# Functions and code can access these constants
+def calculate_circle_area(radius):
+    return PI * (radius ** 2)
+
+def calculate_free_fall_distance(time):
+    return 0.5 * GRAVITY * (time ** 2)
+
+# Using the constants
+radius = 5
+time = 2
+circle_area = calculate_circle_area(radius)
+free_fall_distance = calculate_free_fall_distance(time)
+
+print(f"Circle area with radius {radius}: {circle_area}")
+print(f"Free fall distance after {time} seconds: {free_fall_distance}")
+```
+
+# In this example, `PI` and `GRAVITY` are defined as global constants, indicated by their uppercase names. These constants can be used throughout the program without modification, and their values are accessible in functions as well.
 
 # Remember that Python does not enforce the immutability of variables with uppercase names; it's a naming convention. If you want to create truly immutable constants, you can use techniques like creating custom classes or using Python's `collections.namedtuple`.
+
+# Using uppercase variable names for constants and defining them in the global scope is a common practice in Python to make your code more readable and maintainable.that Python does not enforce the immutability of variables with uppercase names; it's a naming convention. If you want to create truly immutable constants, you can use techniques like creating custom classes or using Python's `collections.namedtuple`.
 
 # Using uppercase variable names for constants and defining them in the global scope is a common practice in Python to make your code more readable and maintainable.

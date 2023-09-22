@@ -153,7 +153,7 @@ In Python, constants are typically defined as global variables with uppercase na
 
 # Here's an example of defining a constant in Python's global scope:
 
-```python
+
 # Defobal constant
 PI = 3.14159265359
 GRAVITY = 9.81
@@ -173,7 +173,7 @@ free_fall_distance = calculate_free_fall_distance(time)
 
 print(f"Circle area with radius {radius}: {circle_area}")
 print(f"Free fall distance after {time} seconds: {free_fall_distance}")
-```
+
 
 # In this example, `PI` and `GRAVITY` are defined as global constants, indicated by their uppercase names. These constants can be used throughout the program without modification, and their values are accessible in functions as well.
 

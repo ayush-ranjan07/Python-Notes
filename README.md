@@ -1,6 +1,6 @@
 # Python
 
-This repository offers notes for Python, serving as a resource for skill enhancement.
+This repository offers notes for Python, serving as a resource for learning Python.
 
 ## Support
 
